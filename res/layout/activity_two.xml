@@ -42,17 +42,18 @@
         android:layout_below="@id/btn_item_set"
         android:padding="10dip" >
 
+        <!-- listview -->
         <ListView
             android:id="@+id/list_second"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_alignParentLeft="true"
-            android:layout_marginRight="33dip"
+            android:layout_marginRight="35dip"
             android:background="#FFEFD5"
             android:cacheColorHint="@android:color/transparent"
             android:fadingEdge="none"
             android:scrollbars="none" />
-
+        <!-- 右侧的自定义ScrollBarView -->
         <com.example.scrollbarlist.view.ScrollBarView
             android:id="@+id/scroll_bar"
             android:layout_width="30dip"
