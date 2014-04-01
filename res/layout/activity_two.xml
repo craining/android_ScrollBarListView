@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneActivity" >
+
+    <TextView
+        android:id="@+id/text_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:text="item数量：" />
+
+    <EditText
+        android:id="@+id/edit_item_count"
+        android:layout_width="80dip"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/text_item_count"
+        android:inputType="number"
+        android:text="100" />
+
+    <Button
+        android:id="@+id/btn_item_set"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/edit_item_count"
+        android:text="  测试  " />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/btn_item_set"
+        android:padding="10dip" >
+
+        <ListView
+            android:id="@+id/list_second"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="33dip"
+            android:background="#FFEFD5"
+            android:cacheColorHint="@android:color/transparent"
+            android:fadingEdge="none"
+            android:scrollbars="none" />
+
+        <com.example.scrollbarlist.view.ScrollBarView
+            android:id="@+id/scroll_bar"
+            android:layout_width="30dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

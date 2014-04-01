@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneActivity" >
+
+    <Button
+        android:id="@+id/btn_activity_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:gravity="left"
+        android:text="ScrollBarListView\r\n\r\n此自定义View包含:\r\nListView、ScrollBar、滚动条控制按钮" />
+
+    <Button
+        android:id="@+id/btn_activity_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_activity_one"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dip"
+        android:gravity="left"
+        android:text="ScrollBarView\r\n\r\n此自定义View包含:\r\nScrollBar、滚动条控制按钮" />
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dip"
+        android:text="about" />
+
+</RelativeLayout>
